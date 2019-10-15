@@ -99,10 +99,12 @@ div.hidden { display: none; }
 }
 
 #welcom-text p{
+  padding: 6px 6px 6px 32px;
   float: right;
   color: #00004d;
   font-size: 25px;
   text-align: right;
+  font-weight: bolder;
 }
 
 #header-container {
