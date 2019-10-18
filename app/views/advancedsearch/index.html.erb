@@ -21,6 +21,8 @@
 
   </nav1>
    <main>
+    <!--
+
           <%= form_tag({:controller => "results", :action => "index"}, method: :get) do %>
           <h1 class="heading">Facilities</h1>
 
@@ -53,8 +55,8 @@
           Room.select('DISTINCT tech'),
           :tech, :tech, {include_blank: 'Any'} %>
           
-           <!--to implement later on, idk how to merge the data together
-          <div class="heading">Reservation Period</div>-->
+           to implement later on, idk how to merge the data together
+          <div class="heading">Reservation Period</div>
           
           <br>
           <%= label_tag(:startdate, "Start Date") %>
@@ -73,6 +75,7 @@
           <%= time_field(:booking, :endtime, value: "23:59") %>
           <%= submit_tag 'Search' %>
         <% end %>
+      -->
     </main>
 
     
@@ -89,3 +92,4 @@
       <%= debug(params) if Rails.env.development? %>
   </div>
 </html>
+
