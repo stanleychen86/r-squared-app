@@ -21,7 +21,7 @@ html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 16px;
     color: 1c3738;
-    background: #ffffff;
+    background: #EFEFEF;
     padding:0;
     margin:0;
 }
@@ -45,7 +45,7 @@ nav {
     width: 100px!important ;
 }
 nav>a{
-    display: inline-block;
+    display: block;
     padding: 0.5%;
     color: #ffffff;
     text-decoration: none;
@@ -58,9 +58,38 @@ nav>a:hover {
 }
 
 nav>a.active {
-    display: inline-block;
+    display: block;
     padding: 0.5%;
     color: #ffffff;
+    text-decoration: none;
+}
+
+nav1 {
+    font-family: 'Montserrat', sans-serif;
+    background: #5a0a25;
+    font-size: 1.3rem;
+    margin: 0 ;
+    text-align: center;
+}
+
+nav1>a{
+    display: block;
+    padding: 0;
+    color: #041B52;
+    text-decoration: none;
+    margin-top: 0px;
+    padding: 8px 16px;
+}
+
+nav1>a:hover {
+    background: #041B52;
+    color: #ffffff;
+}
+
+nav1>a.active {
+    display: block;
+    padding: 0.5%;
+    color: #041B52;
     text-decoration: none;
 }
 
@@ -116,26 +145,28 @@ nav>a.active {
 }
 
 #calendar {
-    border: 1px solid #999;
+    border: 0px;
     border-collapse: collapse;
     font-family: Georgia, Times, serif;
 }
 
  #calendar_th {
-   border: 1px solid #999;
+   border: 0px;
    font-size: 70%;
    text-transform: uppercase;
+   color: #041B52;
+   font-weight: 900;
  }
  
  #calendar_td {
-   border: 1px solid #999;
-   height: 5em;
-   width:5em;
+   border: 0px;
+   height: 6em;
+   width: 9em;
    padding: 5px;
-   vertical-align: top;
+   vertical-align: left;
+   background-color: #FFFFFF;
    }
    
  .checkbox {
      display: inline;
  }
-
