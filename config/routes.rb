@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   get 'app/views/calendar_bookings/index.html.erb', to: 'calendar_bookings#index', as: 'calendar_bookings'
   get 'app/views/dailyreservations/index.html.erb', to: 'dailyreservations#index', as: 'dailyreservations'
   get 'app/views/calendar/show.html.erb', to: 'calendar#show', as: 'show_calendar'
+  get 'app/views/advancedsearch/facility.html.erb',to: 'advancedsearch#facility', as: 'facility'
+  get 'app/views/advancedsearch/size.html.erb',to: 'advancedsearch#size', as: 'size'
+  get 'app/views/advancedsearch/location.html.erb',to: 'advancedsearch#location', as: 'location'
 
   get    '/bright',  to: 'bright#index'
   get    '/rdmc',    to: 'rdmc#index'

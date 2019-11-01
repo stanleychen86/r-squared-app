@@ -16,126 +16,156 @@
 * {
   box-sizing: border-box;
 }
- 
-html, body {
-    font-family: 'Comfortaa', cursive;
-    font-size: 16px;
-    color: 1c3738;
-    background: #ffffff;
-    padding:0;
-    margin:0;
+
+html,
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  color: 1c3738;
+  background: #efefef;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    background-color: #5a0a25;
-    text-align:center;
+  background-color: #5a0a25;
+  text-align: center;
 }
 
 nav {
-    font-family: 'Montserrat', sans-serif;
-    background: #5a0a25;
-    font-size: 1.3rem;
-    margin: 0 auto;
-    text-align: center;
-    height: 100px;
-}
-
-.nav_img{
-    height: 100px;
-    width: 100px!important ;
-}
-nav>a{
-    display: inline-block;
-    padding: 0.5%;
-    color: #ffffff;
-    text-decoration: none;
-    margin-top: 50px;
-}
-
-nav>a:hover {
-    background: #ffffff;
-    color: #5a0a25;
-}
-
-nav>a.active {
-    display: inline-block;
-    padding: 0.5%;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.btn {
-    display: block;
-    padding: 16px;
-    width: 70%;
-    transition-duration: 0.4s;
-    border: 2px solid #5a0a25;
-    background-color: #870d36;
-    color: #5a0a25;
-    box-shadow: 0 9px #999;
-    color: white;
-    border-radius: 12px;
-    
-}
-
-.back_btn{
-    width: 30%;
-}
-
-#new_btn{
-    width: 40%;
-}
-
-
-.btn:hover {
-    background-color: #5a0a25;
-}
-
-.btn:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  font-family: "Montserrat", sans-serif;
+  background: #5a0a25;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
 }
 
 .nav_img {
-    width: 180px;
+  height: 100px;
+  width: 100px !important ;
+}
+nav > a {
+  display: block;
+  padding: 0.5%;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+nav > a:hover {
+  background: #ffffff;
+  color: #5a0a25;
+}
+
+nav > a.active {
+  display: block;
+  padding: 0.5%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav1 {
+  font-family: "Montserrat", sans-serif;
+  background: #5a0a25;
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+nav1 > a {
+  display: block;
+  padding: 0;
+  color: #041b52;
+  text-decoration: none;
+  margin-top: 0px;
+  padding: 8px 16px;
+}
+
+nav1 > a:hover {
+  background: #041b52;
+  color: #ffffff;
+}
+
+nav1 > a.active {
+  display: block;
+  padding: 0.5%;
+  color: #041b52;
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  padding: 16px;
+  width: 70%;
+  transition-duration: 0.4s;
+  border: 2px solid #5a0a25;
+  background-color: #870d36;
+  color: #5a0a25;
+  box-shadow: 0 9px #999;
+  color: white;
+  border-radius: 12px;
+}
+
+.back_btn {
+  width: 30%;
+}
+
+#new_btn {
+  width: 40%;
+}
+
+.btn:hover {
+  background-color: #5a0a25;
+}
+
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.nav_img {
+  width: 180px;
 }
 
 .footer_btn {
-    display: inline;
-    bottom: 0;
-    color: #5a0a25;
-    text-align: center;
-    padding: 16px;
-    width: 50%;
-    transition-duration: 0.4s;
-    border: 2px solid #5a0a25;
-    background-color: #870d36;
-    color: white;
-    box-shadow: 0 9px #999;
-    border-radius: 12px;
+  display: inline;
+  bottom: 0;
+  color: #5a0a25;
+  text-align: center;
+  padding: 16px;
+  width: 50%;
+  transition-duration: 0.4s;
+  border: 2px solid #5a0a25;
+  background-color: #870d36;
+  color: white;
+  box-shadow: 0 9px #999;
+  border-radius: 12px;
 }
 
 #calendar {
-    border: 1px solid #999;
-    border-collapse: collapse;
-    font-family: Georgia, Times, serif;
+  border: 0px;
+  border-collapse: collapse;
+  font-family: Georgia, Times, serif;
 }
 
- #calendar_th {
-   border: 1px solid #999;
-   font-size: 70%;
-   text-transform: uppercase;
- }
- 
- #calendar_td {
-   border: 1px solid #999;
-   height: 5em;
-   width:5em;
-   padding: 5px;
-   vertical-align: top;
-   }
-   
- .checkbox {
-     display: inline;
- }
+#calendar_th {
+  border: 0px;
+  font-size: 70%;
+  text-transform: uppercase;
+  color: #041b52;
+  font-weight: 900;
+}
 
+#calendar_td {
+  border: 0px;
+  height: 6em;
+  width: 9em;
+  padding: 5px;
+  vertical-align: left;
+  background-color: #ffffff;
+}
+
+.checkbox {
+  display: inline;
+}
