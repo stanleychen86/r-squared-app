@@ -26,15 +26,36 @@
 
   <main>
           <%= form_tag({:controller => "results", :action => "index"}, method: :get) do %>
-          <h1 class="heading">size</h1>
+          <h1 class="heading">time</h1>
 
-          
+          <%= label_tag(:building_name, "Building") %>
+          <%= collection_select :room, :building_name,
+          Room.select('DISTINCT building_name'),
+          :building_name, :building_name, {include_blank: 'Any'} %>
+
+          <%= label_tag(:roomtype, "Room Type") %>
+          <%= collection_select :room, :roomtype,
+          Room.select('DISTINCT roomtype'),
+          :roomtype, :roomtype, {include_blank: 'Any'} %>
+
 
           <br>
           <%= label_tag(:numpeople, "Number of People") %>
           <%= collection_select :room, :numpeople,
           Room.select('DISTINCT numpeople'),
           :numpeople, :numpeople, {include_blank: 'Any'} %>
+          
+          <br>
+          <%= label_tag(:arrangement, "Furniture") %>
+          <%= collection_select :room, :arrangement,
+          Room.select('DISTINCT arrangement'),
+          :arrangement, :arrangement, {include_blank: 'Any'} %>  
+            
+          <br>
+          <%= label_tag(:tech, "Technology") %>
+          <%= collection_select :room, :tech,
+          Room.select('DISTINCT tech'),
+          :tech, :tech, {include_blank: 'Any'} %>
           
            <!--to implement later on, idk how to merge the data together
           <div class="heading">Reservation Period</div>-->

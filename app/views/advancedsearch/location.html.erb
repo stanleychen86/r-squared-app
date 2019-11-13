@@ -16,57 +16,25 @@
               <br><%= link_to "Facility", facility_path %>
               <br><%= link_to "Size", size_path%>
               <br><%= link_to "Location", location_path%>
-              <br><%= link_to "Time" %>
+              <br><%= link_to "Time", time_path%>
               <button class=btn >Search</button>
               <button class=btn style = background-color:black >clear</button>
   </nav1>
 
   
   
-  <nav1 style = "height: 780px; background-color:#FFFFFF;float: left;width: 80%;margin-bottom: 0;padding-top: 20px;font-size: 20px;color: #041B52;top:0;">
-              <h2>Location<h2>
-    <style>
-    .btn {BORDER: 1px solid;  COLOR: white; height: 60px; width: 180px;}
-    </style>
-    <button class=btn style = background-color:blue>HRBB</button>
-    <button class=btn style = background-color:blue>RDMC</button>
-    
-  </nav1>
+ 
 
 
 
   <main>
           <%= form_tag({:controller => "results", :action => "index"}, method: :get) do %>
-          <h1 class="heading">Facilities</h1>
+          <h1 class="heading">location</h1>
 
           <%= label_tag(:building_name, "Building") %>
           <%= collection_select :room, :building_name,
           Room.select('DISTINCT building_name'),
           :building_name, :building_name, {include_blank: 'Any'} %>
-
-          <%= label_tag(:roomtype, "Room Type") %>
-          <%= collection_select :room, :roomtype,
-          Room.select('DISTINCT roomtype'),
-          :roomtype, :roomtype, {include_blank: 'Any'} %>
-
-
-          <br>
-          <%= label_tag(:numpeople, "Number of People") %>
-          <%= collection_select :room, :numpeople,
-          Room.select('DISTINCT numpeople'),
-          :numpeople, :numpeople, {include_blank: 'Any'} %>
-          
-          <br>
-          <%= label_tag(:arrangement, "Furniture") %>
-          <%= collection_select :room, :arrangement,
-          Room.select('DISTINCT arrangement'),
-          :arrangement, :arrangement, {include_blank: 'Any'} %>  
-            
-          <br>
-          <%= label_tag(:tech, "Technology") %>
-          <%= collection_select :room, :tech,
-          Room.select('DISTINCT tech'),
-          :tech, :tech, {include_blank: 'Any'} %>
           
            <!--to implement later on, idk how to merge the data together
           <div class="heading">Reservation Period</div>-->

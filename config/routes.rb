@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'app/views/advancedsearch/facility.html.erb',to: 'advancedsearch#facility', as: 'facility'
   get 'app/views/advancedsearch/size.html.erb',to: 'advancedsearch#size', as: 'size'
   get 'app/views/advancedsearch/location.html.erb',to: 'advancedsearch#location', as: 'location'
+  get 'app/views/advancedsearch/time.html.erb',to: 'advancedsearch#time', as: 'time'
 
   get    '/bright',  to: 'bright#index'
   get    '/rdmc',    to: 'rdmc#index'
